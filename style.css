@@ -7,13 +7,17 @@
 }
 
 :root {
-    --header-bg-color: rgb(61,224,126);
-    --main-bg-color: rgb(0,0,0);
-    --footer-bg-color: rgb(51,51,51);
+    --bg-color-green: rgb(61,224,126);
+    --bg-color-black: rgb(0,0,0);
+    --bg-colorgrey: rgb(51,51,51);
+    --bg-color-blue: rgb(0,190,231);
+    --bg-color-yellow: rgb(242,210,76);
+    --bg-color-red: rgb(232,63,87);
+    --bg-color-brown: rgb(52,8,9);
 }
 
 header {
-    background-color: var(--header-bg-color);
+    background-color: var(--bg-color-green);
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     display: flex;
@@ -33,11 +37,56 @@ h1 {
 }
 
 main {
-    background-color: var(--main-bg-color);
-    height: 1500px;
+    background-color: var(--bg-color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 70%;
+    padding: 2rem 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    height: 28.5rem;
+}
+
+.card {
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+h2 {
+    padding: 1rem 0;
+}
+
+.info {
+ font-size: .8rem;
+}
+
+button {
+    background-color: var(--bg-color-red);
+    color: white;
+    border-radius: .3rem;
+    padding: .4rem;
+    margin-top: auto;
+    font-size: .7rem;
+    align-self: start;
+    cursor: pointer;
 }
 
 footer {
-    background-color: var(--footer-bg-color);
+    background-color: var(--bg-colorgrey);
     height: 250px;
 }
