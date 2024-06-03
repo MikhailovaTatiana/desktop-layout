@@ -6,19 +6,20 @@
     padding: 0;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 :root {
     --bg-color-green: rgb(61,224,126);
     --bg-color-black: rgb(0,0,0);
     --bg-colorgrey: rgb(51,51,51);
-    --bg-color-blue: rgb(0,190,231);
-    --bg-color-yellow: rgb(242,210,76);
     --bg-color-red: rgb(232,63,87);
     --bg-color-brown: rgb(52,8,9);
 }
 
 header {
     background-color: var(--bg-color-green);
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -112,5 +113,19 @@ button {
 
 footer {
     background-color: var(--bg-colorgrey);
-    height: 250px;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr 4fr;
+    place-items: center;
+    padding: 2rem 0 5rem;
+}
+
+footer h3 {
+    padding: .5rem 0;;
+}
+
+footer p,
+footer img {
+    font-size: .7rem;
+    cursor: pointer;
 }
