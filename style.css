@@ -44,6 +44,11 @@ main {
     align-items: center;
 }
 
+article {
+    display: flex;
+    flex-direction: column; 
+}
+
 .three-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,18 +57,25 @@ main {
     padding: 2rem 0;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    height: 28.5rem;
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 70%;
+    padding: 2rem 0 4rem;
 }
 
 .card {
     color: white;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
-.card img {
+.big-card {
+    background-color: white;
+}
+
+.card img,
+.big-card img {
     width: 100%;
 }
 
@@ -73,6 +85,7 @@ h2 {
 
 .info {
  font-size: .8rem;
+ margin-bottom: 2.5rem;
 }
 
 button {
@@ -84,6 +97,17 @@ button {
     font-size: .7rem;
     align-self: start;
     cursor: pointer;
+    border: none;
+}
+
+.big-card h2,
+.big-card p {
+    padding-left: 1rem;
+}
+
+.big-card button {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 footer {
