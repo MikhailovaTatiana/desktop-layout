@@ -45,6 +45,11 @@ main {
     align-items: center;
 }
 
+.main-header {
+    padding: 3rem 0 0 15%;
+    align-self: start;
+}
+
 article {
     display: flex;
     flex-direction: column; 
